@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Little Angel's Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <h2>Little Angel's Store</h2>
+            </div>
+            <nav class="header-nav" aria-label="Main Navigation">
+                <div class="category-dropdown">
+                    <a href="category.html">
+                        Category
+                        <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a href="category.html?filter=ankara-outfit">Ankara Outfit</a></li>
+                        <li><a href="category.html?filter=gift-packages">Gift Packages</a></li>
+                        <li><a href="category.html?filter=accessories">Accessories</a></li>
+                        <li><a href="category.html?filter=styled-fashion">Styled Fashion</a></li>
+                    </ul>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="gift-package.html">Gift Package</a>
+                <a href="about-us.html">About Us</a>
+            </nav>
+        </div>
+        <div class="header-items">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="login.html" class="user-icon-link" aria-label="User Login">
+                <i class="fa-solid fa-user user-icon"></i>
+            </a>
+            <a href="cart.html" class="cart-icon-link" aria-label="Shopping Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="category-main">
+        <section class="category-hero">
+            <h1>Our Product Categories</h1>
+            <p>Explore our wide range of unique and stylish products.</p>
+        </section>
+
+        <section class="category-filter-section">
+            <div class="category-filter-links" id="category-filter-links">
+                <a href="#" data-category="all" class="filter-btn active">All Products</a>
+                <a href="#" data-category="kids-outfit" class="filter-btn">Kids Outfits</a>
+                <a href="#" data-category="ankara-outfit" class="filter-btn">Ankara Outfits</a>
+                <a href="#" data-category="accessories" class="filter-btn">Accessories</a>
+                <a href="#" data-category="styled-fashion" class="filter-btn">Styled Fashion</a>
+                <a href="#" data-category="gift-packages" class="filter-btn">Gift Packages</a>
+            </div>
+        </section>
+        
+        <section class="products-section">
+            <div class="products-grid" id="product-list">
+                </div>
+        </section>
+    </main>
+
+    <div class="divider"></div>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column footer-brand">
+                <div class="brand-logo">
+                    <span>Little Angel's Store</span>
+                </div>
+                <p>Lagos, Lagos, Nigeria</p>
+                <p>+234 902 098 9259</p>
+                <p>Las@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="category.html">Ankara Outfit</a></li>
+                    <li><a href="category.html">Gift Packages</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Styled Fashion</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Little_Angel_Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>
